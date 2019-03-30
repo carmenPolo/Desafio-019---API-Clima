@@ -2,25 +2,55 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>class</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+    <title>ejercicio semana10</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
   </head>
 
   <body>
-    hola Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  <div id="map"></div>
+    <div class="container">
+      <h1 class="text-center" >Consulta Clima mediante AJAX</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <select class="" id="select">
+              <option>Seleccione una ubicación</option>
+              <option value="scl">Santiago, Región Metropolitana</option>
+              <option value="ptov">Puerto Varas, Región de los Lagos</option>
+            </select>
+            <img src="" alt="" class="img-responsive">
+          </div>  <!-- form-group -->
+        </div> <!-- col-md-4 -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+<div class="col-md-8">
+  <h2 id="resumen"></h2>
+<table class="table">
+  <tr>
+    <td>Sensación térmica:</td>
+    <td id="sensacion"></td>
+  </tr>
+  <tr>
+    <td>Probabilidad de lluvia:</td>
+    <td id="probabilidad"></td>
+  </tr>
+  <tr>
+    <td>Humedad relativa:</td>
+    <td id="humedad"></td>
+  </tr>
+</table>
+</div><!-- col-md-8 -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript"src="assets/script.js"></script>
-    <script async defer
-      src="https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/js?key=AIzaSyCA_m00gCN3it7ADJYxXIpX8tVAZGzwnbo&callback=initMap"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/script.js"></script>
+  <!-- <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA_m00gCN3it7ADJYxXIpX8tVAZGzwnbo&callback=initMap"></script> -->
+
   </body>
 </html>
