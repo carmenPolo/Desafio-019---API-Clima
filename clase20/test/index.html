@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Consumir Indicadores Económicos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="jumbotron">
+        <h4>Conversor Dollar / Peso chileno</h4>
+        <form id="inputClp">
+                <label for="inputpeso">CLP$</label>
+                <input type ="number" class="form-control" id="inputpeso" placeholder="Valor en Pesos" value="">
+                <button type="submit" class="btn btn-default">convertir</button>
+              <div id="resultado1"> resultado</div>
+          </form>
+
+          <form id="inputUs">
+                <label for="inputdolar"> US $ </label>
+                <input type="number" class="form-control" id="inputdolar" placeholder="Valor en Dollar">
+                <button type="submit" class="btn btn-default">convertir</button>
+            <div id="resultado2"> resultado</div>
+          </form>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <h4>Indicadores económicos</h4>
+      <table class="table table-condensed">
+        <tr>
+          <td>Dólar</td>
+          <td id=dollar></td>
+        </tr>
+        <tr>
+          <td>Euro</td>
+          <td id=euro></td>
+        </tr>
+        <tr>
+          <td>UF</td>
+          <td id=uf></td>
+        </tr>
+        <tr>
+          <td>UTM</td>
+          <td id=utm></td>
+        </tr>
+      </table>
+    </div><!-- md-8 -->
+  </div> <!-- row-->
+</div> <!-- container -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

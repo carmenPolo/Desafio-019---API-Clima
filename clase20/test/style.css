@@ -1,0 +1,21 @@
+#conv_a_peso{
+  display: inline-block;
+
+}
+
+#conv_a_dolar{
+  display: inline-block;
+}
+.conversor {
+  margin: 10px;
+  display: inline-block;
+}
+.jumbotron{
+  padding: 25px;
+  box-sizing: border-box;
+}
+.form-control, form{
+  width: 150px;
+  margin: 5px auto;
+  display: inline-block;
+}
