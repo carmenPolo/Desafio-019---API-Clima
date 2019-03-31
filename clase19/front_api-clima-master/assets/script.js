@@ -8,7 +8,7 @@ var coords = {
 var queryparams=['exclude=[minutely,hourly,daily,alerts,flags]', 'lang=es', 'units=auto'];
 var image = {
   'clear-day':'http://icons.wxug.com/i/c/v4/clear.svg',
-  'rain': 'http://icons.wxug.com/i/c/v4/rain.svg'
+  'rain':'http://icons.wxug.com/i/c/v4/rain.svg'
 }
 
 
@@ -24,7 +24,7 @@ $('select').on('change',function(){
     $('#sensacion').text(data.currently.apparentTemperature + 'º');
     $('#probabilidad').text(data.currently.precipProbability * 100 + '%');
     $('#humedad').text(data.currently.humidity * 100 + '%');
-    $('.img-responsive').attr('src', image[data.currently.icon])
+    $('.img-responsive').attr('src', image [data.currently.icon])
 
 });// select on change
 

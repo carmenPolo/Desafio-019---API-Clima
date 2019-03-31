@@ -8,12 +8,13 @@
   </head>
 
   <body>
+
     <div class="container">
       <h1 class="text-center" >Consulta Clima mediante AJAX</h1>
       <div class="row">
         <div class="col-md-4">
           <div class="form-group">
-            <select class="" id="select">
+            <select class="form-control" id="select">
               <option>Seleccione una ubicación</option>
               <option value="scl">Santiago, Región Metropolitana</option>
               <option value="ptov">Puerto Varas, Región de los Lagos</option>
@@ -21,25 +22,28 @@
             <img src="" alt="" class="img-responsive">
           </div>  <!-- form-group -->
         </div> <!-- col-md-4 -->
+
+        <div class="col-md-8">
+          <h2 id="resumen"></h2>
+        <table class="table">
+          <tr>
+            <td>Sensación térmica:</td>
+            <td id="sensacion"></td>
+          </tr>
+          <tr>
+            <td>Probabilidad de lluvia:</td>
+            <td id="probabilidad"></td>
+          </tr>
+          <tr>
+            <td>Humedad relativa:</td>
+            <td id="humedad"></td>
+          </tr>
+        </table>
+        </div><!-- col-md-8 -->
+
       </div> <!-- row -->
     </div> <!-- container -->
-<div class="col-md-8">
-  <h2 id="resumen"></h2>
-<table class="table">
-  <tr>
-    <td>Sensación térmica:</td>
-    <td id="sensacion"></td>
-  </tr>
-  <tr>
-    <td>Probabilidad de lluvia:</td>
-    <td id="probabilidad"></td>
-  </tr>
-  <tr>
-    <td>Humedad relativa:</td>
-    <td id="humedad"></td>
-  </tr>
-</table>
-</div><!-- col-md-8 -->
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"
